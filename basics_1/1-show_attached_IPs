@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script will be used to display all IPv4 IPs
+# grep will be used to find the inet (IPv4) group/pattern
+# awk will be used to print the second columns where the IP addresses are
+ifconfig | grep "inet " | awk '{print $2}'
